@@ -19,7 +19,7 @@ A side project I was curious about and how it can be implemented. It's going to 
     - `implementation 'androidx.core:core-ktx:1.12.0'`
 7. Build and run the app on a physical device (not an emulator).
 
-
+<br/><br/><br/><br/>
 
 # 28 December 2024
 ## Feature
