@@ -11,7 +11,8 @@ IndoorNavigation is a small Android project that demonstrates the ability to mea
 ## How It Works
 
 1. The app calculates the distance using the **log-distance path loss model**:
-![image](https://github.com/user-attachments/assets/a50418a6-483b-4ee6-8eea-144d366c194a)
+<br/>![image](https://github.com/user-attachments/assets/ea6fa568-a072-441d-8c17-bab733af216b)
+<br/>
 - **RSSI**: Signal strength in dBm (retrieved programmatically).
 - **RSSI_ref**: Signal strength at 1 meter from the access point (measured empirically).
 - **n**: Path-loss exponent (varies depending on the environment, typically 2-4).
