@@ -12,16 +12,16 @@ A side project I was curious about and how it can be implemented. It's going to 
 1. Clone the repository
 2. Open the project in Android Studio.
 3. Add the following permissions to AndroidManifest.xml:
-   <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-   <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-4. Sync the project with Gradle to ensure all dependencies are installed:
+    - `<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />`
+    - `<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />`
+5. Sync the project with Gradle to ensure all dependencies are installed:
    implementation ("androidx.appcompat:appcompat:1.6.1")
    implementation ("androidx.core:core-ktx:1.12.0")
-5. Build and run the app on a physical device (not an emulator).
+6. Build and run the app on a physical device (not an emulator).
 
 #28 December 2024
 ## Feature
-- easure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
+- measure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
 - update the distance in real-time (every 500ms).
 
 ## How it works
