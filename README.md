@@ -1,4 +1,4 @@
-# IndoorNavigation
+# Indoor Navigation
 
 A side project I was curious about and how it can be implemented. It's going to be a learning curve, so I'll be implementing new things as I learn them, until it becomes a complete indoor navigation system!
 
