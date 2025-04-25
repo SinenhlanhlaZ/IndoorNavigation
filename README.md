@@ -38,7 +38,6 @@ A side project I was curious about and how it can be implemented. It's going to 
 <br/><br/><br/><br/>
 
 # 25 April 2025
-<br/>
 So... navigating needs a map... pretty obvious, right? The next step was to create a floor layout. I did some quick research and learnt that architects use CAD software, which exports drawings in .dxf format. I went with QCAD, as it's free. After creating the drawing, I wrote a Python script that reads the .dxf file.<br/><br/>
 
 As this is a learning experience, this first program will just read the file's contents (lines and text). It doesn't necessarily interpret the drawing in the context of the entire building and it having different rooms.
