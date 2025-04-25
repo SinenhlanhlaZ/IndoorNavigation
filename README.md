@@ -50,6 +50,7 @@ A .dxf file is a text based format that represents CAD drawings in a human reada
 - BLOCKS (reusable shapes)
 - TABLES (style info)
 <br/><br/>
+
 Each entity (like a line or text) is made up of group codes
 `0
 LINE
