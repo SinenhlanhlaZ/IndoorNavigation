@@ -35,3 +35,34 @@ A side project I was curious about and how it can be implemented. It's going to 
 
 2. The app fetches the RSSI value of the connected Wi-Fi access point and updates the calculated distance every 500 milliseconds.
 
+<br/><br/><br/><br/>
+
+# 25 April 2025
+<br/>
+So... navigating needs a map... pretty obvious, right? The next step was to create a floor layout. I did some quick research and learnt that architects use CAD software, which exports drawings in .dxf format. I went with QCAD, as it's free. After creating the drawing, I wrote a Python script that reads the .dxf file.<br/><br/>
+
+As this is a learning experience, this first program will just read the file's contents (lines and text). It doesn't necessarily interpret the drawing in the context of the entire building and it having different rooms.
+
+## How it works
+A .dxf file is a text based format that represents CAD drawings in a human readable way. The format has sections, of which the relevant one to the project are:
+- HEADER (general info like units)
+- ENTITIES (for drawing objects like lines, circles, texts)
+- BLOCKS (reusable shapes)
+- TABLES (style info)
+<br/><br/>
+Each entity (like a line or text) is made up of group codes
+`0
+LINE
+8
+LayerName
+10
+x1
+20
+y1
+11
+x2
+21
+y2`
+This is a line from (x1, y1) to (x2, y2)
+
+<br/><br/><br/><br/>
