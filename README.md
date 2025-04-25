@@ -22,7 +22,6 @@ A side project I was curious about and how it can be implemented. It's going to 
 <br/><br/><br/><br/>
 
 # 28 December 2024
-## Feature
 - measure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
 - update the distance in real-time (every 500ms).
 
