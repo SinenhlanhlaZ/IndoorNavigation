@@ -2,8 +2,6 @@
 
 A side project I was curious about and how it can be implemented. It's going to be a learning curve, so I'll be implementing new things as I learn them, until it becomes a complete indoor navigation system!
 
-<br/>
-
 # 28 December 2024
 - measure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
 - update the distance in real-time (every 500ms).
