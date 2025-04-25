@@ -2,6 +2,21 @@
 
 A side project I was curious about and how it can be implemented. It's going to be a learning curve, so I'll be implementing new things as I learn them, until it becomes a complete indoor navigation system!
 
+<br/>
+
+# 28 December 2024
+- measure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
+- update the distance in real-time (every 500ms).
+
+## How it works
+1. The distance is calculated using the **log-distance path loss model**:
+<br/><br/>![image](https://github.com/user-attachments/assets/ea6fa568-a072-441d-8c17-bab733af216b)<br/>
+- **RSSI**: Signal strength in dBm (retrieved programmatically).
+- **RSSI_ref**: Signal strength at 1 meter from the access point (measured empirically).
+- **n**: Path-loss exponent (varies depending on the environment, typically 2-4).
+
+2. The app fetches the RSSI value of the connected Wi-Fi access point and updates the calculated distance every 500 milliseconds.
+
 ## Prerequisites
 - Android Studio (latest version recommended).
 - An Android device with Wi-Fi capabilities.
@@ -18,21 +33,6 @@ A side project I was curious about and how it can be implemented. It's going to 
     - `implementation 'androidx.appcompat:appcompat:1.6.1'`
     - `implementation 'androidx.core:core-ktx:1.12.0'`
 7. Build and run the app on a physical device (not an emulator).
-
-<br/><br/><br/><br/>
-
-# 28 December 2024
-- measure the distance from the device to the connected Wi-Fi access point using RSSI (Received Signal Strength Indicator).
-- update the distance in real-time (every 500ms).
-
-## How it works
-1. The distance is calculated using the **log-distance path loss model**:
-<br/><br/>![image](https://github.com/user-attachments/assets/ea6fa568-a072-441d-8c17-bab733af216b)<br/>
-- **RSSI**: Signal strength in dBm (retrieved programmatically).
-- **RSSI_ref**: Signal strength at 1 meter from the access point (measured empirically).
-- **n**: Path-loss exponent (varies depending on the environment, typically 2-4).
-
-2. The app fetches the RSSI value of the connected Wi-Fi access point and updates the calculated distance every 500 milliseconds.
 
 <br/><br/><br/><br/>
 
